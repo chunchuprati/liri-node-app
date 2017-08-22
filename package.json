@@ -1,3 +1,31 @@
-npm install request
-npm install --save node-spotify-api
-npm install twitter
+{
+  "name": "liri",
+  "version": "1.0.0",
+  "description": "LIRI is like SIRI.It is a command line NodeJS script that takes in parameters and outputs data.",
+  "main": "liri.js",
+  "scripts": {
+    "start": "node liri",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunchuprati/liri-node-app.git"
+  },
+  "keywords": [
+    "liri",
+    "like",
+    "siri"
+  ],
+  "author": "prathibha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chunchuprati/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/chunchuprati/liri-node-app#readme",
+  "dependencies": {
+    "inquirer": "^3.2.2",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.81.0",
+    "twitter": "^1.7.1"
+  }
+}
