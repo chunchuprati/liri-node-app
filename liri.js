@@ -73,7 +73,7 @@ function choices(action){
                 name: 'Name'
             }
         ]).then(function(response){
-            spotifyThis(response);    
+            spotifyThis(response.Name);    
         });
     } else if(action === "Know about Movie"){
         inquirer.prompt([
@@ -166,12 +166,12 @@ function omdbThis(value) {
 
 //Start of Spotify Function
 function spotifyThis(value) {
-    console.log(value.Name);
+    //console.log(value.Name);
     if (value == null) {
         value = 'computer love';
     }
     spotify
-    .search({ type: 'track', query: value.Name})
+    .search({ type: 'track', query: value})
     .then(function(response) {
     
        console.log(' ');
