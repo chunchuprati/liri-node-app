@@ -85,7 +85,7 @@ function choices(action){
         ]).then(function(response){
             omdbThis(response);    
         });
-    } else if(action === "You Decide"){
+    } else if(action === "Do-what-it-says"){
         random();
     }
 };
